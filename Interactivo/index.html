@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Daily Routines Bingo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="menu-container" class="menu-container">
+    <h1>Daily Routines</h1>
+    <p>Choose your game mode</p>
+    <div class="menu-buttons">
+        <button id="bingo-btn" class="menu-btn bingo-mode">
+            <span class="btn-icon">🎰</span>
+            <span class="btn-text">Cartón de Bingo</span>
+        </button>
+        <button id="tombola-btn" class="menu-btn tombola-mode">
+            <span class="btn-icon">🎲</span>
+            <span class="btn-text">Tombola</span>
+        </button>
+    </div>
+</div>
+
+<div id="bingo-container" class="game-container hidden">
+    <button class="back-btn" id="back-bingo">← Volver al Menú</button>
+    <h1>Daily Routines Bingo</h1>
+    <p>Click the images to mark / unmark</p>
+    <div id="bingo-board"></div>
+</div>
+
+<div id="tombola-container" class="game-container hidden">
+    <button class="back-btn" id="back-tombola">← Volver al Menú</button>
+    <h1>Tombola de Rutinas</h1>
+    <div class="tombola-wrapper">
+        <div class="tombola-ball">
+            <div id="tombola-content" class="tombola-content">
+                <p>Presiona para sortear</p>
+            </div>
+        </div>
+        <button id="draw-btn" class="draw-button">SORTEAR</button>
+    </div>
+    <div id="drawn-items" class="drawn-items"></div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
